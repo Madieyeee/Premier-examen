@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Délice - Accueil</title>
+<link rel="website icon" type="jpg" href="panier-variete-pain.jpg">
+</head>
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header{
+    background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url('panier-variete-pain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 14px;
+    justify-content:space-around;
+    align-items: center;
+    background-color:#342e19;
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav li{
+    padding-right: 50px;
+    display: inline-block; 
+}
+nav a{
+    text-decoration: none;
+    color: #fafafa;
+}
+header h2{
+    margin-left: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+}
+.ye{
+    font-family: 'Cursive Standard', cursive;
+    margin: 15% 20% 6% 25%;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(245, 242, 224);
+}
+
+/* Section d'accueil */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#accueil {
+    background:linear-gradient(180deg,rgba(0,0,0,0.9),rgba(0,0,0,0.2)),url('img3.jpg');
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100wh;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.presentation,
+.qualite-produits,
+.services {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.presentation h1 {
+    font-size: 32px;
+    line-height: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+}
+
+.presentation {
+margin-top: 25%;
+margin-bottom: 25%;
+}
+
+.separation {
+    opacity: 0;
+    padding-bottom: 5px;
+}
+
+.presentation p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* style du menu */
+
+.menu-section {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.presentation {
+    width: calc(33.33% - 20px); /* Répartit les divs sur 3 colonnes avec un espace entre elles */
+    margin: 10px;
+    box-sizing: border-box; /* Garantit que la largeur inclut la marge et le rembourrage */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+.description {
+    margin-top: 20px;
+    color: #666;
+}
+
+.menu-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.menu-section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+span{
+color:#ea1538 ;
+}
+
+/* style du A propos */
+.about-section {
+margin: 50px 0;
+padding: 30px;
+border: 1px solid #ddd;
+border-radius: 10px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+font-size: 36px;
+color: #342e19;
+margin-bottom: 20px;
+}
+
+.about-section p {
+font-size: 18px;
+line-height: 1.6;
+color: #575757;
+}
+
+.histoire { background-color: #f2f7f6; }
+.equipe { background-color: #f9f2f4; }
+.engagement { background-color: #f5f8f2; }
+.partenariats { background-color: #f7f1f7; }
+
+.contact h2{
+    color: #000000;
+}
+.contact p {
+    color: #000000;
+}
+
+/* styles Bouton */
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+.svgIcon path {
+    fill: white;
+}
+.button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+}
+.button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+.button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}
+.button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+
+
+</style>
+<body>
+    <header id="ancre">
+		<nav>
+            <h2>Le Délice</h2>
+			<ul>
+				<li><a href="#accueil">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">À propos</a></li>
+			</ul>
+		</nav>
+		<h1 class="ye">La saveur du pain partagé n'a point d'égal</h1>
+		<div>
+			
+		</div>
+	</header>
+<!-- section acceuil -->    
+<section id="accueil">
+    <div class="presentation">
+        <h2>Welcome!</h2>
+        <p>Bienvenue chez Le Délice, votre boulangerie de confiance depuis 20 ans. Nous sommes fiers de vous proposer une expérience gustative unique, alliant tradition et qualité.</p>
+    </div>
+
+    <div class="separation">Ceci est un texte invisible.</div>
+
+    <div class="qualite-produits">
+        <h2>Description de la qualité des produits</h2>
+        <p>Nos boulangers passionnés mettent en œuvre leur talent avec des ingrédients de première qualité, garantissant ainsi la création quotidienne de produits frais et savoureux. Au cœur de 'Le Délice', l'engagement envers la qualité demeure notre priorité absolue. Chaque jour, nous nous efforçons de vous offrir une expérience gustative exceptionnelle, empreinte de délicatesse et d'authenticité.</p>
+    </div>
+
+    <div class="separation">Ceci est un texte invisible.</div>
+
+    <div class="services">
+        <h2>Nos services</h2>
+        <p>Découvrez notre gamme de services exceptionnels, allant de la personnalisation de gâteaux à la livraison à domicile. Chez nous, chaque engagement est une promesse de rendre votre expérience inoubliable. Nous sommes déterminés à surpasser vos attentes, offrant des solutions sur mesure et un service de qualité qui fait de chaque interaction un moment mémorable.</p>
+    </div>
+</section>
+
+<!-- Section Menu -->
+
+<section id="menu" class="menu-section">
+<div class="presentation">
+    <figure>
+        <img src="baguette2.jpg" alt="Image Baguette spéciale">
+    </figure>
+    <div class="description">
+        <h2>Baguette - 250cfa</h2>
+        <p>Découvrez notre Baguette Spéciale artisanale : une croûte croustillante qui révèle une mie tendre et aérée. Une fusion parfaite de tradition et de qualité, idéale pour accompagner vos repas.</p>
+    </div>
+</div>
+
+<div class="presentation">
+    <figure>
+        <img src="croissant.jpg" alt="Image de présentation">
+    </figure>
+    <div class="description">
+        <h2>Croissants - 600cfa</h2>
+        <p>Dégustez nos délicieux croissants et moelleux;  Parfaits pour accompagner votre café du matin ou pour une pause gourmande à tout moment de la journée.</p>
+        <ul>
+        <li>Croissants <span>Beurre</span> </li>
+        <li>Croissants <span>Chocolat</span></li>
+        </ul>
+    </div>
+</div>
+<div class="presentation">
+    <figure>
+        <img src="imggateau2.jpg" alt="Gateau Anniversaire">
+    </figure>
+    <div class="description">
+        <h2>Gâteau Anniversaire</h2>
+        <p>Un délice tendre et moelleux, alliant saveurs exquises et créativité.</p>
+        <ul>
+            <li>Gâteau 8 parts <span>prix:10.0000CFA</span></li>
+            <li>Gâteau 12 parts <span>prix:12.0000CFA</span></li>
+            <li>Gâteau 16 parts <span>prix:14.0000CFA</span></li>
+        </ul>
+    </div>
+</div>
+<div class="presentation">
+    <figure>
+        <img src="Gateaufraise.jpg" alt="Image de présentation">
+    </figure>
+    <div class="description">
+        <h2>Gâteau aux Fraises</h2>
+        <p>Un dessert léger qui apportera une touche sucrée à vos moments spéciaux.</p>
+        <ul>
+            <li>Gâteau 8 parts  <span>prix:10.0000CFA</span></li>
+            <li>Gâteau 10 parts <span>prix:12.000CFA</span></li>
+            <li>Gâteau 14 parts  <span>prix:16.000CFA</span></li>
+        </ul>
+    </div>
+</div>
+<div class="presentation">
+    <figure>
+        <img src="cake.jpg" alt="Image de présentation">
+    </figure>
+    <div class="description">
+    <h2><span>Promotion</span> Cake Maison - <span> 8000cfa!!!</span></h2>
+    <p>Notre cake maison est préparé avec soin, mélangeant des saveurs riches et une texture moelleuse. Parfait pour accompagner votre thé de l'après-midi ou comme dessert.</p>
+    </div>
+</div>
+<div class="presentation">
+    <figure>
+        <img src="beignets.jpg" alt="Image de présentation">
+    </figure>
+    <div class="description">
+    <h2>Beignets - 1000cfa</h2>
+    <p>Dégustez nos délicieux croissants faits maison, croustillants à l'extérieur et moelleux à l'intérieur. Parfaits pour accompagner votre café du matin ou pour une pause gourmande à tout moment.</p>
+    </div>
+</div>
+</section>
+
+<!-- Section A Propros -->
+
+<div id="about">
+<div class="about-section histoire">
+    <h2>Notre Histoire</h2>
+    <p>Découvrez comment "Le Délice" est né il y a 20 ans, dans une petite boulangerie familiale. Depuis lors, nous avons continué à partager notre passion pour la boulangerie artisanale avec notre communauté.</p>
+</div>
+
+<div class="about-section equipe">
+    <h2>Notre Équipe</h2>
+    <p>Rencontrez notre équipe dévouée de boulangers et pâtissiers passionnés par l'art de la boulangerie. Chacun d'entre nous apporte son savoir-faire unique pour créer des produits délicieux et mémorables.</p>
+</div>
+
+<div class="about-section engagement">
+    <h2>Engagement Qualité</h2>
+    <p>Nous nous engageons à utiliser les meilleurs ingrédients pour créer des produits de qualité supérieure. Chaque étape de notre processus de fabrication est minutieusement surveillée pour garantir une expérience gustative exceptionnelle.</p>
+</div>
+
+<div class="about-section partenariats">
+    <h2>Partenariats Locaux</h2>
+    <p>Nous sommes fiers de collaborer avec nos <a href="https://sunuproduitslocaux.com/">producteurs locaux</a> pour soutenir notre communauté. En favorisant des partenariats durables, nous contribuons à préserver l'environnement et à offrir des produits frais et de qualité à nos clients.</p>
+</div>
+</div>
+
+<a href="#ancre"><button class="button">
+    <svg class="svgIcon" viewBox="0 0 384 512">
+    <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    ></path>
+    </svg>
+</button>
+</a>
+
+<!-- footer -->
+<footer>
+    
+<section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Pour plus d’informations, contactez-nous par email à <a href="mailto:contact@ledelice.com">contact@ledelice.com</a> ou par téléphone au <a href="tel:00221779553758"></a> 00221779553758.
+    Ou si vous preferer discuter avec le <a href="Direct Messaging.html">service Delice</a></p>
+
+    <p>&copy; 2024 Le Délice - Tous droits réservés, Madieye</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d61740.33011980217!2d-17.41910699445685!3d14.725555756482509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssn!4v1709701894489!5m2!1sen!2ssn" width="100%" height="300" style="border:0;" allowfullscreen=" loading="lazy referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+</section>
+</footer>
+</body>
+</html>

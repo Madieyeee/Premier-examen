@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Messaging App</title>
+    <style>
+        body {
+            background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url('imgbackground.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa   ;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            background-color: #e7d6d6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .header {
+            background-color: #5a583b;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .messages {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .message img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+
+        .message p {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 70%;
+        }
+
+        .user-message {
+            align-self: flex-end;
+            align-items: flex-end;
+        }
+
+        .user-message p {
+            background-color: #5a583b;
+            color: #fff;
+            
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #5a583b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>Le Délice Service</h2>
+        </div>
+
+        <div class="messages">
+            <div class="message">
+                <img src="user1.jpg" alt="User 1">
+                <p>Bonjour !</p>
+            </div>
+
+            <div class="user-message">
+                <p>Que voulez vous commander ?</p>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <input type="text" placeholder="Type your message...">
+            <button class="placewam">Send</button>
+        </div>
+    </div>
+</body>
+</html>
